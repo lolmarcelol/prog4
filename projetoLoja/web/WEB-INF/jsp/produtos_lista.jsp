@@ -24,7 +24,7 @@
         
         <div>
             <p> <%=produto.getNome() %> </p>
-            <a href=""produto_detalhes?id=<%=produto.getId() %>
+            <a href="produto_detalhes?id=<%=produto.getId() %>">
                <img src="imagens/0<%=produto.getId()%>.jpg" alt="produto_<%=produto.getId()%>" />
             </a>
                <p> RS <%=produto.getPreco()%></p>
