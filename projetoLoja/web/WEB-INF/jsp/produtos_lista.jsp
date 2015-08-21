@@ -18,7 +18,7 @@
         <c:forEach var="produto" items="${produtos}">
             <div>
             <p> ${produto.nome} </p>
-            <a href="produto_detalhes?id=${produto.id}">
+            <a href="detalhe?id=${produto.id}">
                 <img src="../imagens/${produto.id}.jpg" alt="produto_${produto.id}" width="300" heigth="300" />
             </a>
                <p> RS ${produto.preco}</p>

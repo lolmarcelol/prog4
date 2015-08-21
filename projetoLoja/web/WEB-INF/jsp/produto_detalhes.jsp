@@ -16,8 +16,8 @@
     </head>
     <body>
         
-        <p> {produto.nome} </p>
-        <p> {produto.preco} </p>
+        <p> ${produto.nome} </p>
+        <p> ${produto.preco} </p>
         
     </body>
 </html>
