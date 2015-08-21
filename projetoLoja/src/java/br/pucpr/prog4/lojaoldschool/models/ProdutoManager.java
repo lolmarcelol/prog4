@@ -27,6 +27,17 @@ public class ProdutoManager implements IProdutoManager {
         
     }
     
+    @Override
+    public Produto obterPorId(int id){
+        for(Produto produto : this.produtos){
+            if(produto.getId() == id){
+                return produto;
+            }
+                
+        }
+        return null;
+    }
+    
     public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
     }

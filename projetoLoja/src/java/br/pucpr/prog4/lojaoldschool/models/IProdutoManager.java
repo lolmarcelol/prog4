@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface IProdutoManager {
     List<Produto> getProdutos();
+    Produto obterPorId(int id);
 }
