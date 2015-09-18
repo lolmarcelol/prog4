@@ -1,4 +1,4 @@
-package dao;
+package br.pucpr.lojaoldschool.dao;
 
 import br.pucpr.lojaoldschool.dao.ClienteDAO;
 

@@ -2,11 +2,10 @@
 package br.pucpr.prog4.lojaoldschool.models;
 
 import br.pucpr.lojaoldschool.dao.ClienteDAO;
-import dao.IDaoManager;
-import dao.JdbcDaoManager;
+import br.pucpr.lojaoldschool.dao.IDaoManager;
+import br.pucpr.lojaoldschool.dao.JdbcDaoManager;
 
 public class ClienteManagerImpn implements ClienteManager {
-    Cliente cliente;
 
     @Override
     public Cliente cadastrar(Cliente cliente){

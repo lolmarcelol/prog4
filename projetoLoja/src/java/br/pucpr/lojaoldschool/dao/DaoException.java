@@ -1,4 +1,4 @@
-package dao;
+package br.pucpr.lojaoldschool.dao;
 
 public class DaoException extends RuntimeException {
 

@@ -2,11 +2,9 @@
 package br.pucpr.lojaoldschool.controllers;
 
 import br.pucpr.prog4.lojaoldschool.models.Cliente;
+import br.pucpr.prog4.lojaoldschool.models.ClienteManager;
+import br.pucpr.prog4.lojaoldschool.models.ClienteManagerImpn;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -37,14 +35,17 @@ public class ClienteServlet extends HttpServlet {
        int CPF =Integer.parseInt(CPFaux);
        cliente.setCPF(CPF);
        
-       /*SimpleDateFormat dataFormatada = new SimpleDateFormat("dd/MM/yyyy");
-       try{
-           Date dataNasc;
-           dataNasc = request.getParameter("Data");
-       dataFormatada.parse(dataNasc);
-       }catch(ParseException ex){
-           Logger.getLogger(ClienteServlet.class.getName()).Log();
-       }*/
+       ClienteManager manager;
+       manager = new ClienteManagerImpn();
+       manager.cadastrar(cliente);
+        /*SimpleDateFormat dataFormatada = new SimpleDateFormat("dd/MM/yyyy");
+        try{
+        Date dataNasc;
+        dataNasc = request.getParameter("Data");
+        dataFormatada.parse(dataNasc);
+        }catch(ParseException ex){
+        Logger.getLogger(ClienteServlet.class.getName()).Log();
+        }*/
     }
 
 }
