@@ -12,6 +12,10 @@
         <servlet-name>ClienteServlet</servlet-name>
         <servlet-class>br.pucpr.lojaoldschool.controllers.ClienteServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AutomoveLNovoServlet</servlet-name>
+        <servlet-class>br.pucpr.lojaoldschool.controllers.AutomoveLNovoServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProdutoListaServlet</servlet-name>
         <url-pattern>/produto/lista</url-pattern>
@@ -23,6 +27,11 @@
     <servlet-mapping>
         <servlet-name>ClienteServlet</servlet-name>
         <url-pattern>/Cliente/cadastro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AutomoveLNovoServlet</servlet-name>
+        <url-pattern>/automovel/novo</url-pattern>
+        <url-pattern>/automovel/salvar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
